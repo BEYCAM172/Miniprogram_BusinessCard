@@ -1,7 +1,18 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="我的名片" back="{{false}}" color="#123f82" background="#F5F9FF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
+  <view class="page">
+    <image
+      class="cover-image"
+      src="/images/header.png"
+      mode="widthFix"
+    ></image>
+
+    <view class="content">
+      <text class="title">你好，我是{{name}}</text>
+      <text class="paragraph">我来自{{school}}，是一名{{grade}}。</text>
+      <text class="paragraph">我的专业是{{major}}。</text>
+      <text class="paragraph">{{introduction}}</text>
+    </view>
   </view>
 </scroll-view>
